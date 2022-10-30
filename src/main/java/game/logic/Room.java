@@ -1,14 +1,17 @@
 package game.logic;
 
 public class Room {
+    //private variables
     private int roomNo;
     private String desc;
     
+    //constructor 
     public Room(int roomNumber, String roomDesc){
         setRoomNo(roomNumber);
         setDesc(roomDesc);
     }
-
+     
+    //getter and setters 
     public int getRoomNo() {
         return this.roomNo;
     }
