@@ -14,7 +14,7 @@ public class Enemy extends Character {
     static Enemy summonMob(String enemy) {
 
         Enemy mob = null;
-        switch (enemy) {  //creating diffferent enemies 
+        switch (enemy) {   //creating diffferent enemies 
             case "Ninja":
                 mob = new Enemy("Ninja", 10, 20, false);
                 break;
