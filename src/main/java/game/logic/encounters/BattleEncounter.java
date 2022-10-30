@@ -3,7 +3,7 @@ package game.logic.encounters;
 import game.logic.Enemy;
 
 public class BattleEncounter extends Encounter {
-
+    //variables 
     public String description;
     public Enemy enemy;
     public Boolean won;

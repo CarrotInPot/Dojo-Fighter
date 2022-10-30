@@ -1,10 +1,12 @@
 package game.logic;
 
 public class Enemy extends Character {
-
+    
+    //enemy variables
     public final int xpValue;
     public final boolean isBoss;
 
+    //contructor    
     public Enemy(String name, int maxHP, int xpValue, boolean isBoss) {
         super(name, maxHP, maxHP);
         this.xpValue = xpValue;

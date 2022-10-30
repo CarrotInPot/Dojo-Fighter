@@ -10,11 +10,14 @@ import java.util.UUID;
 
 public final class GameLogic {
 
+    //variables
     private final DBManager dbManager;
     private final Map map = new Map();
-
     private Player player;
     public Encounter currentEncounter;
+    private static final int NUM_ACTS = 5;
+    private static final String[] ENEMY_NAMES = new String[]{"Ninja", "Samurai", "Sohei", "Ashigaru", "Wokou"};
+    private static final Random rand = new Random();
 
     public GameLogic() throws SQLException {
         dbManager = new DBManager();
@@ -23,7 +26,8 @@ public final class GameLogic {
     public GameLogic(String databaseName) throws SQLException {
         dbManager = new DBManager(databaseName);
     }
-
+    
+    //getter and setters 
     public Player getPlayer() {
         return player;
     }
@@ -32,10 +36,7 @@ public final class GameLogic {
         player = pc;
     }
 
-    private static final int NUM_ACTS = 5;
-    private static final String[] ENEMY_NAMES = new String[]{"Ninja", "Samurai", "Sohei", "Ashigaru", "Wokou"};
-    private static final Random rand = new Random();
-
+    //continue 
     public void continueAdventure() {
         player.roomCount++;
         currentEncounter = null;
@@ -69,7 +70,8 @@ public final class GameLogic {
             );
         }
     }
-
+     
+    //getters 
     public DBManager getDBManager() {
         return dbManager;
     }
@@ -108,7 +110,6 @@ public final class GameLogic {
                 dmg += "\n\nThank you for playing!";
                 battleEncounter.won = false;
             }
-
             battleEncounter.description = dmg;
         }
     }
