@@ -81,8 +81,9 @@ public final class GameLogic {
     public Room getCurrentRoom() {
         return map.getRoom(player.roomCount);
     }
-
-    public void flee() {
+ 
+        // run away from battle
+    public void flee() { 
         if (!(currentEncounter instanceof BattleEncounter)) {
             throw new IllegalStateException();
         }
@@ -112,6 +113,7 @@ public final class GameLogic {
         }
     }
 
+    //fight scenario 
     public void fight() {
         if (!(currentEncounter instanceof BattleEncounter)) {
             throw new IllegalStateException();
@@ -148,7 +150,8 @@ public final class GameLogic {
 
         battleEncounter.description = dmg;
     }
-
+    
+    //random attack value 
     public static int attack() {
         return rand.nextInt(15) + 1;
     }
