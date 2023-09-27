@@ -33,10 +33,32 @@ This project is a Java-based, turn-based role-playing game (RPG) with a graphica
 + Navigate to the project directory: cd Dojo-Fighter
 + Run the game.
 
-+ ## Screenshots of gameplay:
++ ## Screenshots of the game:
+
+Main Menu:
 
 ![MainMenu](screenshots/DojoFighter1.JPG)
-![Description of image 2](screenshots/image2name.jpg)
+
+Story: 
+
+![Lore](screenshots/DojoFighter2.JPG)
+
+Enemy Encounter and Battle: 
+
+![EnemyEncounter](screenshots/DojoFighter3.JPG)
+![Attack](screenshots/DojoFighter4.JPG)
+![KilledEnemy](screenshots/DojoFighter5.JPG)
+
+Boss Battle:
+
+![Boss](screenshots/DojoFighterBoss.JPG)
+![BossEnd](screenshots/DojoFighter7.JPG)
+
+End: 
+
+![End](screenshots/DojoFighter8.JPG)
+
+
 
 
 
