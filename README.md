@@ -31,7 +31,13 @@ This project is a Java-based, turn-based role-playing game (RPG) with a graphica
 ## Installation
 + Clone the repo: git clone https://github.com/CarrotInPot/Dojo-Fighter
 + Navigate to the project directory: cd Dojo-Fighter
-+ Run the game. 
++ Run the game.
+
++ ## Screenshots of gameplay:
+
+![MainMenu](screenshots/DojoFighter1.JPG)
+![Description of image 2](screenshots/image2name.jpg)
+
 
 
 
